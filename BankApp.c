@@ -65,3 +65,19 @@ int main(void)
 	}
 	return 0;
 }
+
+//Function Definitions
+double CompoundInterest(double amount, int months, double annualInterestRate)
+{
+	double monthlyInterestRate;
+	double compoundInterestRate = 1;
+	int count;
+
+	monthlyInterestRate = (annualInterestRate / 1200) + 1;
+	for (count = 0; count <months; count++)
+	{
+		compoundInterestRate *= monthlyInterestRate;
+	}
+	amount = amount*compoundInterestRate;
+	return amount;
+}
