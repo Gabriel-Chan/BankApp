@@ -10,6 +10,10 @@ interest, and show the balance.
 #include <conio.h>
 #include <stdlib.h>
 
+//Function Declarations
+double CompoundInterest(double amount, int months, double annualInterestRate);
+double MoneyRound(double amount);
+
 int main(void)
 {
 	char menuInput = ' ';
