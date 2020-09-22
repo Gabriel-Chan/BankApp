@@ -12,5 +12,52 @@ interest, and show the balance.
 
 int main(void)
 {
+	char menuInput = ' ';
+
+	printf("Bank Account Management Application:\n\n");
+	printf("Keep track of account balance allowing user to deposit,withdraw,accumulate\n");
+	printf("interest, and show the balance.\n");
+
+	while ('q' != menuInput && 'Q' != menuInput)
+	{
+		printf("\n\n(D)eposit funds into the account\n");
+		printf("(W)ithdraw funds from the account\n");
+		printf("(A)dd interest\n");
+		printf("(S)how the balance\n");
+		printf("(Q)uit the application\n");
+		printf("\nPlease enter choice=> ");
+		fflush(stdin);
+		scanf(" %c", &menuInput);
+		switch (menuInput)
+		{
+			case 'D':
+			case 'd':
+			{
+			}
+			break;
+
+			case 'W':
+			case 'w':
+			{
+			}
+			break;
+
+			case 'A':
+			case 'a':
+			{
+
+			}
+			break;
+			case 'S':
+			case 's':
+			{
+			}
+			break;
+			default:
+			{
+				printf("\n\nInvalid option, please choose again.\n");
+			}
+			}
+	}
 	return 0;
 }
