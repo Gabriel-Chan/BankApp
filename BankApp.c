@@ -81,3 +81,12 @@ double CompoundInterest(double amount, int months, double annualInterestRate)
 	amount = amount*compoundInterestRate;
 	return amount;
 }
+
+double MoneyRound(double amount)
+{
+	int moneyRound;
+
+	moneyRound = (amount * 100) + 0.5;
+	amount = (float)moneyRound / 100;
+	return amount;
+}
