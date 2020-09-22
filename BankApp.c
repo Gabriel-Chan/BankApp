@@ -74,6 +74,7 @@ int main(void)
 			case 'S':
 			case 's':
 			{
+				printf("\n\nYour balance is $%.2lf\n", amount);
 			}
 			break;
 			default:
