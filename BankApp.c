@@ -37,6 +37,12 @@ int main(void)
 			case 'D':
 			case 'd':
 			{
+				printf("\n\nPlease enter amount to be deposited==> ");
+				scanf("%lf", &deposit);
+				if (deposit > 0)
+					amount += deposit;
+				else
+					printf("\n\nInvalid entry, deposit not performed\n");
 			}
 			break;
 
