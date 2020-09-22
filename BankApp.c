@@ -49,6 +49,14 @@ int main(void)
 			case 'W':
 			case 'w':
 			{
+				printf("\n\nPlease enter amount to be withdrawed==> ");
+				scanf("%lf", &withdraw);
+				if (0 < withdraw && amount > withdraw)
+					amount -= withdraw;
+				else if (amount < withdraw)
+					printf("\n\nInsufficent funds\n");
+				else
+					printf("\n\nInvalid entry, withdrawal not performed\n");
 			}
 			break;
 
