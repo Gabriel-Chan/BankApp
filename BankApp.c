@@ -63,7 +63,12 @@ int main(void)
 			case 'A':
 			case 'a':
 			{
-
+				printf("\n\nPlease enter the # of months for the interest rate ==> ");
+				scanf("%i", &months);
+				printf("\nPlease enter the annual interest rate in % ==> ");
+				scanf("%lf", &annualInterestRate);
+				amount = CompoundInterest(amount, months, annualInterestRate);
+				amount = MoneyRound(amount);
 			}
 			break;
 			case 'S':
